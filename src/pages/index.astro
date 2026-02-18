@@ -1,0 +1,26 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Hero from '../components/sections/Hero.svelte';
+import Problems from '../components/sections/Problems.svelte';
+import HowItWorks from '../components/sections/HowItWorks.svelte';
+import Services from '../components/sections/Services.svelte';
+import Features from '../components/sections/Features.svelte';
+import Portfolio from '../components/sections/Portfolio.svelte';
+import Testimonials from '../components/sections/Testimonials.svelte';
+import Pricing from '../components/sections/Pricing.svelte';
+import FAQ from '../components/sections/FAQ.svelte';
+import CtaSection from '../components/sections/CtaSection.svelte';
+---
+
+<BaseLayout>
+  <Hero client:load />
+  <Problems />
+  <HowItWorks />
+  <Services client:visible />
+  <Features />
+  <Portfolio client:visible />
+  <Testimonials />
+  <Pricing client:visible />
+  <FAQ client:visible />
+  <CtaSection />
+</BaseLayout>

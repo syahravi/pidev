@@ -1,0 +1,25 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Services from '../components/sections/Services.svelte';
+import Features from '../components/sections/Features.svelte';
+import CtaSection from '../components/sections/CtaSection.svelte';
+---
+
+<BaseLayout
+  title="Layanan"
+  description="Layanan pembuatan website profesional untuk UMKM, personal, landing page, restoran, bio link, dan mahasiswa di Bogor."
+>
+  <!-- Page Header -->
+  <section class="gradient-hero pt-32 pb-16">
+    <div class="container-custom text-center">
+      <h1 class="text-4xl md:text-5xl font-bold text-white">Layanan Kami</h1>
+      <p class="mt-4 text-lg text-white/80 max-w-2xl mx-auto">
+        Pilih paket website yang sesuai dengan kebutuhan bisnis Anda
+      </p>
+    </div>
+  </section>
+
+  <Services client:visible />
+  <Features />
+  <CtaSection />
+</BaseLayout>
