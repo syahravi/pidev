@@ -1,11 +1,13 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
 import Hero from '../components/sections/Hero.svelte';
+import StatsBar from '../components/sections/StatsBar.svelte';
 import Problems from '../components/sections/Problems.svelte';
+import Founder from '../components/sections/Founder.svelte';
 import HowItWorks from '../components/sections/HowItWorks.svelte';
 import Services from '../components/sections/Services.svelte';
 import Features from '../components/sections/Features.svelte';
-import Portfolio from '../components/sections/Portfolio.svelte';
+import PortfolioStory from '../components/sections/PortfolioStory.svelte';
 import Testimonials from '../components/sections/Testimonials.svelte';
 import Pricing from '../components/sections/Pricing.svelte';
 import FAQ from '../components/sections/FAQ.svelte';
@@ -14,13 +16,15 @@ import CtaSection from '../components/sections/CtaSection.svelte';
 
 <BaseLayout>
   <Hero client:load />
+  <StatsBar />
   <Problems />
+  <Founder />
   <HowItWorks />
   <Services client:visible />
   <Features />
-  <Portfolio client:visible />
+  <PortfolioStory client:visible />
   <Testimonials />
   <Pricing client:visible />
   <FAQ client:visible />
-  <CtaSection />
+  <CtaSection client:visible />
 </BaseLayout>

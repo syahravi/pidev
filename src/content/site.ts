@@ -5,12 +5,10 @@ export const siteConfig = {
   description: "Solusi website profesional untuk UMKM dan personal di Bogor. Harga terjangkau, proses cepat, hasil berkualitas.",
   url: "https://pidev.biz.id",
   phone: "6285183370979",
-  email: "hello@pidev.biz.id",
+  email: "halo@pidev.biz.id",
   address: "Bogor, Jawa Barat, Indonesia",
   socialMedia: {
     instagram: "https://instagram.com/pidev.id",
-    tiktok: "https://tiktok.com/@pidev.id",
-    facebook: "https://facebook.com/pidev.id",
   }
 };
 
@@ -26,68 +24,123 @@ export const navigation = [
 
 // Hero Section
 export const hero = {
-  headline: "Website Profesional untuk UMKM & Personal di Bogor",
-  subheadline: "Tingkatkan kredibilitas bisnis Anda dengan website modern. Harga terjangkau mulai Rp 150rb, proses cepat, gratis SSL & hosting!",
-  ctaPrimary: { label: "Konsultasi Gratis", href: "#" },
-  ctaSecondary: { label: "Lihat Harga", href: "/harga" },
-  trustBadges: [
-    "100+ Website Dibuat",
-    "Proses 1-3 Hari",
-    "Support 24/7"
+  badge: "🏆 Jasa Pembuatan Website #1 Bogor",
+  // Headline dengan struktur untuk styling berbeda
+  headlineParts: [
+    { text: "Jasa Pembuatan", highlight: false },
+    { text: "Website", highlight: false },
+    { text: "Murah untuk UMKM", highlight: true },
+    { text: "& Personal", highlight: true }
   ],
-  image: "https://placehold.co/600x400/2563EB/white?text=Website+Profesional"
+  // Deskripsi dengan highlight untuk angka/benefit penting
+  description: {
+    text: "Layanan pembuatan website murah untuk UMKM, kafe, hingga personal branding dengan",
+    highlights: [
+      { text: "desain profesional", type: "accent" },
+      { text: "mulai dari", type: "normal" },
+      { text: "300 ribuan", type: "price" }
+    ],
+    suffix: ". Website responsive, SEO friendly, dan maintenance gratis selama 1 tahun."
+  },
+  uspPoints: [
+    "✅ Konsultasi gratis, tanpa batas tanya",
+    "✅ Dibuat sesuai keinginanmu, bukan template generik",
+    "✅ Balas dalam <1 jam, pengerjaan 8 hari"
+  ],
+  ctaPrimary: {
+    label: "Konsultasi Gratis via WhatsApp Sekarang",
+    subtext: "Biasanya balas < 1 jam"
+  },
+  ctaSecondary: { label: "Lihat Portofolio", href: "/portfolio" },
+  trustMicro: [
+    "Revisi sampai puas",
+    "Dirawat bareng selama 1 tahun"
+  ],
+  founderImage: "/images/founder.jpg"
+};
+
+// Stats Bar Section
+export const statsBar = {
+  items: [
+    { number: "150+", label: "Website Diluncurkan", emoji: "🚀" },
+    { number: "4.9/5", label: "Rating dari Klien", emoji: "⭐" },
+    { number: "5 Hari", label: "Rata-rata Pengerjaan", emoji: "⏱️" },
+    { number: "< 1 Jam", label: "Waktu Respon", emoji: "💬" }
+  ]
 };
 
 // Problems Section
 export const problems = {
-  title: "Masalah yang Sering Dihadapi",
-  subtitle: "Apakah Anda mengalami hal ini?",
+  title: "Pernah ngerasa kayak gini?",
+  subtitle: "Tenang, kamu nggak sendirian. Ini yang sering dialami pemilik usaha:",
   items: [
     {
-      icon: "AlertCircle",
-      title: "Tidak Punya Website",
-      description: "Bisnis Anda sulit ditemukan online dan kehilangan banyak pelanggan potensial"
+      emoji: "😰",
+      title: "Bingung mulai dari mana",
+      description: "Nggak ngerti soal domain, hosting, coding... ribet banget!"
     },
     {
-      icon: "Clock",
-      title: "Proses Rumit & Lama",
-      description: "Membuat website sendiri memakan waktu dan tenaga yang seharusnya untuk bisnis"
+      emoji: "💸",
+      title: "Takut kemahalan",
+      description: "Denger-denger bikin website itu jutaan. Budget nggak kuat..."
     },
     {
-      icon: "DollarSign",
-      title: "Biaya Mahal",
-      description: "Harga pembuatan website di tempat lain terlalu mahal untuk budget UMKM"
+      emoji: "⏰",
+      title: "Nggak ada waktu",
+      description: "Sibuk ngurusin bisnis, mana sempet belajar bikin website"
     },
     {
-      icon: "HelpCircle",
-      title: "Tidak Paham Teknis",
-      description: "Bingung dengan domain, hosting, SSL, dan istilah teknis lainnya"
+      emoji: "🤔",
+      title: "Ragu hasilnya bagus",
+      description: "Takut bayar mahal tapi hasilnya mengecewakan"
     }
   ]
 };
 
+// Founder Section
+export const founder = {
+  sectionLabel: "Kenalan Dulu",
+  name: "Maulana Syahravi",
+  title: "Halo, saya Maulana Syahravi👋",
+  badge: "10+ Tahun Berpengalaman",
+  bio: "Saya Sarjana Komputer yang membantu UMKM dan personal brand di Bogor tampil lebih profesional dan dipercaya secara online.",
+  highlight: "Kenapa ini penting? Pelanggan bukan cuma beli produk kamu, mereka beli karena percaya sama kamu.",
+  credentials: [
+    { emoji: "🎓", text: "S.Kom — Sarjana Komputer" },
+    { emoji: "📍", text: "Berbasis di Bogor" },
+    { emoji: "⚡", text: "Respon < 1 Jam" },
+    { emoji: "👥", text: "150+ Klien Puas" },
+    { emoji: "🔄", text: "Revisi Sampai Puas" }
+  ],
+  image: "/images/founder.jpg",
+  cta: {
+    label: "Chat Langsung dengan Saya",
+    subtext: "Saya sendiri yang balas chat kamu"
+  }
+};
+
 // How It Works Section
 export const howItWorks = {
-  title: "Cara Kerja Kami",
-  subtitle: "3 langkah mudah memiliki website profesional",
+  title: "Cara Kerjanya Simpel Banget",
+  subtitle: "Nggak perlu ribet, tinggal ikuti 3 langkah ini:",
   steps: [
     {
       number: "01",
-      title: "Konsultasi",
-      description: "Hubungi kami via WhatsApp, ceritakan kebutuhan website Anda",
-      icon: "MessageCircle"
+      title: "Ceritakan bisnis kamu",
+      description: "Chat via WhatsApp, ceritain apa bisnis kamu dan mau website kayak gimana",
+      emoji: "💬"
     },
     {
       number: "02",
-      title: "Pengerjaan",
-      description: "Tim kami akan mengerjakan website sesuai kebutuhan Anda",
-      icon: "Code"
+      title: "Kami buatkan",
+      description: "Tim kami kerjakan website kamu. Progress di-update tiap hari!",
+      emoji: "✏️"
     },
     {
       number: "03",
-      title: "Website Aktif",
-      description: "Website Anda siap online dan langsung bisa diakses",
-      icon: "Globe"
+      title: "Langsung bisa dipake!",
+      description: "Website jadi, domain aktif, tinggal share ke pelanggan kamu",
+      emoji: "🚀"
     }
   ]
 };
@@ -95,55 +148,49 @@ export const howItWorks = {
 // Services Section
 export const services = {
   title: "Layanan Kami",
-  subtitle: "Pilih paket website sesuai kebutuhan Anda",
+  subtitle: "Pilih paket website sesuai kebutuhan kamu",
   categories: [
     {
       id: "umkm",
       title: "UMKM & Bisnis",
-      description: "Website profesional untuk toko, jasa, dan bisnis Anda",
+      description: "Website profesional untuk toko, jasa, dan bisnis kamu",
       price: "Rp 500rb+",
-      icon: "Store",
-      image: "https://placehold.co/400x300/2563EB/white?text=UMKM"
+      emoji: "🏪"
     },
     {
       id: "personal",
       title: "Personal & Profesional",
       description: "Portfolio, CV online, dan personal branding",
       price: "Rp 300rb+",
-      icon: "User",
-      image: "https://placehold.co/400x300/2563EB/white?text=Personal"
+      emoji: "👤"
     },
     {
       id: "landing",
       title: "Landing Page Promosi",
       description: "Halaman promosi untuk campaign dan iklan",
       price: "Rp 250rb+",
-      icon: "Megaphone",
-      image: "https://placehold.co/400x300/2563EB/white?text=Landing+Page"
+      emoji: "📢"
     },
     {
       id: "kuliner",
       title: "Restoran & Kuliner",
       description: "Menu digital dan website untuk bisnis F&B",
       price: "Rp 400rb+",
-      icon: "Utensils",
-      image: "https://placehold.co/400x300/2563EB/white?text=Kuliner"
+      emoji: "🍽️"
     },
     {
       id: "biolink",
       title: "Bio Link Profesional",
-      description: "Link-in-bio untuk sosial media Anda",
+      description: "Link-in-bio untuk sosial media kamu",
       price: "Rp 150rb+",
-      icon: "Link",
-      image: "https://placehold.co/400x300/2563EB/white?text=Bio+Link"
+      emoji: "🔗"
     },
     {
       id: "mahasiswa",
       title: "Mahasiswa & Tugas",
       description: "Website untuk tugas kuliah dan project",
       price: "Rp 150rb+",
-      icon: "GraduationCap",
-      image: "https://placehold.co/400x300/2563EB/white?text=Mahasiswa"
+      emoji: "🎓"
     }
   ]
 };
@@ -153,157 +200,118 @@ export const features = {
   title: "Fitur Lengkap di Semua Paket",
   subtitle: "Setiap paket sudah termasuk 14 fitur premium",
   items: [
-    { icon: "Infinity", title: "Unlimited halaman website" },
-    { icon: "Zap", title: "Optimasi page speed otomatis" },
-    { icon: "Shield", title: "Gratis Let's Encrypt SSL certificate" },
-    { icon: "Rocket", title: "Langsung aktif & tidak perlu hosting" },
-    { icon: "Search", title: "Meta On-Page SEO" },
-    { icon: "Share2", title: "Meta Social Sharing (OpenGraph)" },
-    { icon: "Facebook", title: "Meta Verifikasi Facebook" },
-    { icon: "CheckCircle", title: "Meta Verifikasi Google Search Console" },
-    { icon: "Video", title: "Integrasi TikTok Pixel" },
-    { icon: "BarChart3", title: "Integrasi Facebook Pixel" },
-    { icon: "Target", title: "Integrasi Google Ads Conversion" },
-    { icon: "Tag", title: "Integrasi Google Tag Manager" },
-    { icon: "PieChart", title: "Integrasi Google Analytics" },
-    { icon: "AtSign", title: "Custom Domain" }
+    { icon: "check", title: "Unlimited halaman website" },
+    { icon: "check", title: "Optimasi page speed otomatis" },
+    { icon: "check", title: "Langsung aktif" },
+    { icon: "check", title: "Meta On-Page SEO" },
+    { icon: "check", title: "Meta Social Sharing (OpenGraph)" },
+    { icon: "check", title: "Meta Verifikasi Facebook" },
+    { icon: "check", title: "Meta Verifikasi Google Search Console" },
+    { icon: "check", title: "Integrasi TikTok Pixel" },
+    { icon: "check", title: "Integrasi Facebook Pixel" },
+    { icon: "check", title: "Integrasi Google Ads Conversion" },
+    { icon: "check", title: "Integrasi Google Tag Manager" },
+    { icon: "check", title: "Integrasi Google Analytics" },
+    { icon: "check", title: "Custom Domain" }
   ]
 };
 
-// Portfolio Section
-export const portfolio = {
-  title: "Portfolio Kami",
-  subtitle: "Beberapa website yang sudah kami kerjakan",
+// Portfolio Story Section (struktur untuk cerita - data akan diisi dari user)
+export const portfolioStory = {
+  title: "Cerita Sukses Klien Kami",
+  subtitle: "Bukan cuma bikin website, tapi bikin bisnis makin dipercaya",
   items: [
-    {
-      title: "Toko Kue Manis",
-      category: "UMKM & Bisnis",
-      image: "https://placehold.co/600x400/2563EB/white?text=Toko+Kue",
-      url: "#"
-    },
-    {
-      title: "Dr. Ahmad Portfolio",
-      category: "Personal & Profesional",
-      image: "https://placehold.co/600x400/2563EB/white?text=Portfolio",
-      url: "#"
-    },
-    {
-      title: "Promo Ramadhan",
-      category: "Landing Page",
-      image: "https://placehold.co/600x400/2563EB/white?text=Landing+Page",
-      url: "#"
-    },
-    {
-      title: "Warung Nasi Padang",
-      category: "Restoran & Kuliner",
-      image: "https://placehold.co/600x400/2563EB/white?text=Restoran",
-      url: "#"
-    },
-    {
-      title: "Influencer Bio",
-      category: "Bio Link",
-      image: "https://placehold.co/600x400/2563EB/white?text=Bio+Link",
-      url: "#"
-    },
-    {
-      title: "Tugas Akhir UI/UX",
-      category: "Mahasiswa",
-      image: "https://placehold.co/600x400/2563EB/white?text=Tugas+Akhir",
-      url: "#"
-    }
-  ]
+    // Data akan diisi dari user - format per item:
+    // {
+    //   niche: "Kuliner" | "Personal Brand" | "Freelancer" | "Bio Link" | "Content Creator" | "Mahasiswa",
+    //   emoji: "🍰",
+    //   businessName: "Nama Usaha",
+    //   location: "Area Bogor",
+    //   problem: "Masalah yang dihadapi",
+    //   result: "Hasil terukur",
+    //   quote: "Kutipan testimoni",
+    //   rating: 5
+    // }
+  ],
+  closingText: "...dan masih banyak cerita lainnya yang belum sempat kami dokumentasikan 😊"
 };
 
 // Testimonials Section
 export const testimonials = {
-  title: "Apa Kata Mereka",
-  subtitle: "Testimoni dari klien yang sudah menggunakan jasa kami",
+  title: "Kata Mereka tentang PI Dev",
+  subtitle: "Review asli dari klien yang sudah pakai jasa kami",
   items: [
     {
-      name: "Budi Santoso",
-      role: "Pemilik Toko Bangunan",
-      content: "Website yang dibuat sangat profesional dan harganya sangat terjangkau. Prosesnya juga cepat, hanya 2 hari sudah jadi!",
-      avatar: "https://placehold.co/100x100/2563EB/white?text=BS",
+      name: "Ibu Siti",
+      role: "Pemilik Toko Kue",
+      location: "Bogor Selatan",
+      content: "Awalnya ragu karena harganya murah. Eh ternyata hasilnya bagus banget! Recommended!",
       rating: 5
     },
     {
-      name: "Siti Rahayu",
-      role: "Mahasiswa",
-      content: "Sangat membantu untuk tugas akhir saya. Tim PI Dev sangat responsif dan hasilnya memuaskan.",
-      avatar: "https://placehold.co/100x100/2563EB/white?text=SR",
+      name: "Pak Budi",
+      role: "Pemilik Bengkel",
+      location: "Cibinong",
+      content: "Prosesnya cepet banget, 3 hari udah jadi. Mas Maulana responsif orangnya.",
       rating: 5
     },
     {
-      name: "Ahmad Wijaya",
-      role: "Pemilik Restoran",
-      content: "Menu digital yang dibuat sangat keren. Pelanggan saya jadi lebih mudah melihat menu lewat QR code.",
-      avatar: "https://placehold.co/100x100/2563EB/white?text=AW",
+      name: "Dina",
+      role: "Freelance Designer",
+      location: "Dramaga",
+      content: "Portfolio saya jadi keliatan lebih profesional. Klien langsung percaya!",
       rating: 5
     }
   ]
 };
 
-// Pricing Section
+// Pricing Section - HANYA 2 PAKET
 export const pricing = {
-  title: "Harga Transparan",
-  subtitle: "Pilih paket yang sesuai dengan kebutuhan dan budget Anda",
+  title: "Harga Jujur, Tanpa Ribet",
+  subtitle: "Pilih paket yang cocok untuk kamu",
+  anchor: {
+    text: "Biasanya jasa agensi mulai dari Rp 3-5 juta.",
+    highlight: "Kami mulai dari Rp 300rb aja."
+  },
   categories: [
     {
-      id: "umkm",
-      title: "UMKM & Bisnis",
-      price: "500rb",
+      id: "hemat",
+      title: "Paket Hemat",
+      price: "300+",
       pricePrefix: "Rp",
-      priceSuffix: "+",
-      description: "Website lengkap untuk toko dan bisnis",
-      popular: true
+      priceSuffix: "rb",
+      description: "Cocok buat kamu yang baru mau mulai tampil online",
+      popular: false,
+      features: [
+        "Custom design",
+        "Mobile friendly",
+        "WhatsApp order",
+      ]
     },
     {
-      id: "personal",
-      title: "Personal & Profesional",
-      price: "300rb",
+      id: "lengkap",
+      title: "Paket Lengkap",
+      price: "500+",
       pricePrefix: "Rp",
-      priceSuffix: "+",
-      description: "Portfolio dan CV online profesional",
-      popular: false
-    },
-    {
-      id: "landing",
-      title: "Landing Page",
-      price: "250rb",
-      pricePrefix: "Rp",
-      priceSuffix: "+",
-      description: "Halaman promosi untuk campaign",
-      popular: false
-    },
-    {
-      id: "kuliner",
-      title: "Restoran & Kuliner",
-      price: "400rb",
-      pricePrefix: "Rp",
-      priceSuffix: "+",
-      description: "Menu digital dan website F&B",
-      popular: false
-    },
-    {
-      id: "biolink",
-      title: "Bio Link",
-      price: "150rb",
-      pricePrefix: "Rp",
-      priceSuffix: "+",
-      description: "Link-in-bio untuk sosial media",
-      popular: false
-    },
-    {
-      id: "mahasiswa",
-      title: "Mahasiswa",
-      price: "150rb",
-      pricePrefix: "Rp",
-      priceSuffix: "+",
-      description: "Website untuk tugas kuliah",
-      popular: false
+      priceSuffix: "rb",
+      description: "Buat bisnis kamu keliatan lebih serius dan dipercaya",
+      popular: true,
+      features: [
+        "Custom design",
+        "Mobile friendly",
+        "WhatsApp order",
+        "Catalog produk",
+        "Google Maps",
+        "SEO lengkap",
+        "Domain custom (.com)",
+      ]
     }
   ],
-  note: "Semua paket sudah termasuk 14 fitur premium"
+  guarantees: [
+    "Revisi sampai puas",
+    "Tenang aja, websitemu kami jaga selama 1 tahun"
+  ],
+  customNote: "Butuh custom? Chat kami untuk penawaran khusus"
 };
 
 // FAQ Section
@@ -313,7 +321,7 @@ export const faq = {
   items: [
     {
       question: "Berapa lama proses pembuatan website?",
-      answer: "Proses pembuatan website biasanya memakan waktu 1-3 hari kerja tergantung kompleksitas dan revisi yang dibutuhkan."
+      answer: "Proses pembuatan website biasanya memakan waktu 5-15 hari kerja tergantung kompleksitas dan revisi yang dibutuhkan."
     },
     {
       question: "Apakah sudah termasuk domain dan hosting?",
@@ -321,29 +329,40 @@ export const faq = {
     },
     {
       question: "Bagaimana cara pembayaran?",
-      answer: "Pembayaran bisa dilakukan via transfer bank (BCA, Mandiri, BRI) atau e-wallet (GoPay, OVO, DANA). Pembayaran dilakukan setelah website selesai."
+      answer: "Pembayaran bisa dilakukan via transfer bank (Bank Jago Syariah) atau e-wallet (GoPay, Shopeepay) atau QRIS. Pembayaran dilakukan setelah website selesai dan kamu puas dengan hasilnya."
     },
     {
       question: "Apakah bisa request revisi?",
-      answer: "Tentu! Kami memberikan revisi gratis hingga 3x untuk memastikan website sesuai dengan keinginan Anda."
+      answer: "Tentu! Kami memberikan revisi gratis sampai kamu puas dengan hasilnya. Nggak ada batas revisi!"
     },
     {
       question: "Apakah website bisa dikelola sendiri?",
-      answer: "Ya, kami akan memberikan panduan lengkap untuk mengelola website Anda. Jika butuh bantuan, tim support kami siap membantu 24/7."
+      answer: "Ya, kami akan memberikan panduan lengkap untuk mengelola website kamu. Jika butuh bantuan, tim support kami siap membantu 24/7."
     },
     {
       question: "Bagaimana jika ingin upgrade paket?",
-      answer: "Anda bisa upgrade paket kapan saja dengan membayar selisih harga. Hubungi kami via WhatsApp untuk konsultasi lebih lanjut."
+      answer: "Kamu bisa upgrade paket kapan saja dengan membayar selisih harga. Hubungi kami via WhatsApp untuk konsultasi lebih lanjut."
+    },
+    {
+      question: "Apakah ada garansi setelah website selesai?",
+      answer: "Ada! Websitemu kami rawat dan jaga selama 1 tahun penuh. Kalau ada kendala teknis atau butuh update kecil, tinggal chat kami, nggak perlu khawatir dilepas begitu aja setelah selesai."
     }
   ]
 };
 
 // CTA Section
 export const ctaSection = {
-  title: "Siap Memiliki Website Profesional?",
-  subtitle: "Konsultasi gratis dan dapatkan penawaran terbaik untuk bisnis Anda",
-  ctaPrimary: { label: "Konsultasi via WhatsApp", href: "#" },
-  ctaSecondary: { label: "Lihat Portfolio", href: "/portfolio" }
+  title: "Siap Punya Website Profesional?",
+  subtitle: "Konsultasi dulu gratis, nggak ada paksaan beli",
+  cta: {
+    label: "Chat WhatsApp Sekarang",
+    subtext: "Biasanya dibalas < 1 jam"
+  },
+  guarantees: [
+    "Revisi sampai puas",
+    "Kami temenin dari awal sampai 1 tahun ke depan"
+  ],
+  trust: "Sudah 150+ UMKM Bogor mempercayakan website mereka ke PI Dev"
 };
 
 // Footer
