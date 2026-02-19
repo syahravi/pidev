@@ -11,7 +11,7 @@
       <!-- Brand -->
       <div class="md:col-span-2">
         <a href="/" class="text-2xl font-display font-extrabold text-white">
-          Pi<span class="text-emerald-400">Dev</span>
+          PI <span class="text-emerald-400">Dev</span>
         </a>
         <p class="mt-4 text-white/70 max-w-md">
           {footer.description}
