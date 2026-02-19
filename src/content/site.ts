@@ -56,7 +56,7 @@ export const hero = {
     "Revisi sampai puas",
     "Dirawat bareng selama 1 tahun"
   ],
-  founderImage: "/images/founder.jpg"
+  founderImage: "/images/hero.jpg"
 };
 
 // Stats Bar Section
@@ -106,7 +106,7 @@ export const founder = {
   bio: "Saya Sarjana Komputer yang membantu UMKM dan personal brand di Bogor tampil lebih profesional dan dipercaya secara online.",
   highlight: "Kenapa ini penting? Pelanggan bukan cuma beli produk kamu, mereka beli karena percaya sama kamu.",
   credentials: [
-    { emoji: "🎓", text: "S.Kom — Sarjana Komputer" },
+    { emoji: "🎓", text: "S.Kom. (Sarjana Komputer)" },
     { emoji: "📍", text: "Berbasis di Bogor" },
     { emoji: "⚡", text: "Respon < 1 Jam" },
     { emoji: "👥", text: "150+ Klien Puas" },
