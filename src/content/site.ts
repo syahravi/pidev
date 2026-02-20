@@ -269,6 +269,11 @@ export const testimonials = {
 export const pricing = {
   title: "Harga Jujur, Tanpa Ribet",
   subtitle: "Pilih paket yang cocok untuk kamu",
+  promo: {
+    badge: "🌙 Promo Ramadan & Lebaran - Terbatas!",
+    text: "Mumpung momen belanja lagi ramai, hadir lebih profesional dengan website baru.",
+    highlight: "Harga spesial berlaku sampai Hari H Lebaran"
+  },
   anchor: {
     text: "Biasanya jasa agensi mulai dari Rp 3-5 juta.",
     highlight: "Kami mulai dari Rp 300rb aja."

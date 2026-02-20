@@ -8,6 +8,15 @@
     <h2 class="section-title">{pricing.title}</h2>
     <p class="section-subtitle">{pricing.subtitle}</p>
 
+    <!-- Promo Banner -->
+    {#if pricing.promo}
+      <div class="mt-8 bg-gradient-to-r from-amber-500 to-orange-500 text-white rounded-2xl p-6 text-center shadow-lg">
+        <p class="text-lg font-bold">{pricing.promo.badge}</p>
+        <p class="mt-2 text-white/90">{pricing.promo.text}</p>
+        <p class="mt-1 font-semibold">{pricing.promo.highlight}</p>
+      </div>
+    {/if}
+
     <!-- Price Anchor -->
     <div class="mt-8 text-center">
       <p class="text-ink-soft">{pricing.anchor.text}</p>
