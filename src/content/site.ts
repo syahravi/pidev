@@ -127,7 +127,7 @@ export const howItWorks = {
     {
       number: "01",
       title: "Ceritakan bisnis kamu",
-      description: "Chat via WhatsApp, ceritain apa bisnis kamu dan mau website kayak gimana",
+      description: "Chat/Call via WhatsApp, ceritain apa bisnis kamu dan mau website kayak gimana",
       emoji: "💬"
     },
     {
