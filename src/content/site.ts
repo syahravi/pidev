@@ -56,7 +56,7 @@ export const hero = {
     "Revisi sampai puas",
     "Dirawat bareng selama 1 tahun"
   ],
-  founderImage: "/images/hero.jpg"
+  founderImage: "/images/hero.png"
 };
 
 // Stats Bar Section
